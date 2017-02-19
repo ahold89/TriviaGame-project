@@ -1,0 +1,132 @@
+#second, #third, #fourth, #fifth, #sixth, #seventh, #eighth, #getInFailure, #highScoreButton8 {
+    display: none;
+}
+
+#existUserName, #noUserName, #noMail, #noPhone, #noPassword, #unknownUserPassword, #noUserPassword, #chooseSettings, #newHighScoreText, #youLostText {
+    display: none;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+th,td{
+    border: solid black 1px;
+	text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+    background-color: 	#0d8577;
+    color: white;
+}
+
+h4,h2 {
+    color: #6A5ACD;
+    font-weight: bold;
+}
+
+
+.divs{
+    text-align: center;
+    align-content: center;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 8%;
+}
+
+span {
+	color: #6A5ACD;
+	margin-bottom: 15%;
+	font-weight: bold;
+}
+
+button{
+    background-color: #B22222;
+    border: none;
+    color: white;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    width: 60%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+	margin-bottom: 15%;
+	margin-left: auto;
+	margin-right: auto;
+
+    -webkit-border-radius: 10px;
+    -webkit-box-shadow:
+            0px 3px rgba(128,128,128,1), /* gradient effects */
+            0px 4px rgba(118,118,118,1),
+            0px 5px rgba(108,108,108,1),
+            0px 6px rgba(98,98,98,1),
+            0px 7px rgba(88,88,88,1),
+            0px 8px rgba(78,78,78,1),
+            0px 14px 6px -1px rgba(128,128,128,1); /* shadow */
+    -webkit-transition: -webkit-box-shadow .1s ease-in-out;
+    text-transform: uppercase;
+    font-family: 'TradeGothicLTStd-BdCn20','PT Sans Narrow';
+
+}
+
+#time{
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    display: block;
+    align-content: center;
+    font-size: 10vw;
+    color: #6A5ACD;
+    font-weight: bolder;
+}
+
+.inputs{
+    color: cadetblue;
+}
+
+input[type=submit]{
+    background-color: #532518;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+question, answer1, answer2, answer3, answer4{
+	display: block;
+}
+
+@viewport{
+	zoom: 0.0;
+	width: extend-to-zoom;
+}
+
+@-ms-viewport {
+	width: extend-to-zoom;
+	zoom: 0.0;	
+}
+
+html {
+	background-image: url(back.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: repeat-y;	
+	width: 100%;
+	height: 100%;
+	top: 100%;
+}

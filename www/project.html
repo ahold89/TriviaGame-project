@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link >
+        <title>Crazy Trivia</title>
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+        <link rel="stylesheet" href="divStyle.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    </head>
+    <body>
+
+     <div id="logo" class="divs">
+        <img src="newLogo.PNG" alt="Logo" style="width:230px;height:150px;">
+    </div>
+
+    <div id="first" class="divs">
+        <button id="login">Sign-in</button>
+        <br>
+        <h4>No Account?</h4>
+        <button id="signup">Sign-up</button>
+    </div>
+
+    <div id="second" class="divs">
+        <span id="unknownUserPassword">Username or password are unfamiliar. Please try again or sign up</span>
+        <p><input required type="text" id="usernameField" placeholder="Username">
+        <p><input required type="password" id="passwordField" placeholder="Password"></p>
+        <p><button id="getIn" type="button">Get In!</button></p>
+        <p><button id="getInFailure" type="button">No account? Sign up here!</button></p>
+    </div>
+
+    <div id="third" class="divs">
+        <span id="existUserName">User Name already exists, please change!</span>
+        <form>
+            <input class="required" required type="text" id="Name" class="inputs" placeholder="Name" onclick="setBorder(event)">
+            <br>
+            <br>
+            <input class="required" required type="email" id="Email" class="inputs" placeholder="Email" onclick="setBorder(event)">
+            <br>
+            <br>
+            <input class="required" required type="number" id="Phone" class="inputs" placeholder="Phone" onclick="setBorder(event)">
+            <br>
+            <br>
+            <input class="required" required type="password" id="Password" class="inputs" placeholder="Password" onclick="setBorder(event)">
+            <br>
+            <br>
+            <br>
+            <br>
+            <button id="submit" type="button">Get In!</button>
+        </form>
+        <br>
+    </div>
+
+    <div id="fourth" class="divs">
+        <p> <span id="chooseSettings">Please choose your game settings</span> </p>
+        <p> <span id="startGame"></span> <button id="startGameButton" type="button">Start Game</button> </p>
+        <p> <span id="settings"></span> <button id="settingsButton" type="button">Settings</button> </p>
+        <p> <span id="recordTable"></span> <button id="highScoreTableButton" type="button">High Score Table</button> </p>
+    </div>
+
+    <div id="fifth" class="divs">
+        <h3>High Scores</h3>
+        <table id="highScores">
+            <tr id="doNotDelete">
+                <th>User</th>
+                <th>Score</th>
+            </tr>
+            <tr>
+                <th id="idNum1"></th>
+                <th id="score1"></th>
+            </tr>
+            <tr>
+                <th id="idNum2"></th>
+                <th id="score2"></th>
+            </tr>
+            <tr>
+                <th id="idNum3"></th>
+                <th id="score3"></th>
+            </tr>
+            <tr>
+                <th id="idNum4"></th>
+                <th id="score4"></th>
+            </tr>
+            <tr>
+                <th id="idNum5"></th>
+                <th id="score5"></th>
+            </tr>
+        </table>
+        <br>
+        <button id="backToMainButton">Back to main</button>
+    </div>
+    <div id="sixth" class="divs">
+        <h2>Settings</h2>
+        <div id="settingsDiv">
+            <h4>Difficulty Level</h4>
+            <button id="easy" onclick="acceptLevel(event)">Easy</button>
+            <button id="medium" onclick="acceptLevel(event)">Medium</button>
+            <button id="hard" onclick="acceptLevel(event)">Hard</button>
+            <br>
+            <br>
+        </div>
+        <div id="subjectDiv" style="display: none">
+            <h4>Subject</h4>
+            <button id="sport" onclick="acceptSubject(event)">Sport</button>
+            <button id="music" onclick="acceptSubject(event)">Music</button>
+            <button id="geography" onclick="acceptSubject(event)">Geography</button>
+            <button id="science" onclick="acceptSubject(event)">Science</button>
+            <button id="general" onclick="acceptSubject(event)">General</button>
+            <br>
+            <br>
+        </div>
+    </div>
+
+    <div id="seventh" class="divs">
+        <span id="question"></span>
+        <p>
+        <br>
+        <button id="answer1"></button>
+        <br>
+        <button id="answer2"></button>
+        <br>
+        <button id="answer3"></button>
+        <br>
+        <button id="answer4"></button>
+    </div>
+
+    <div id="eighth" class="divs">
+        <p>
+            <span id="youLostText">
+                Wrong answer. Better luck next time!
+            </span>
+        </p>
+        <p>
+            <span id="scoreText">
+                Your score is
+            </span>
+        <span id="userScore"></span>
+        <p>
+            <span id="newHighScoreText">
+                New high score!!!
+            </span>
+        </p>
+        <p>
+            <span id="highScore8"></span>
+            <button id="highScoreButton8" type="button">High Score Table</button>
+        </p>
+        <p> <span id="backToMain8"></span>
+            <button id="backToMainButton8" type="button">Back to Main Menu</button>
+        </p>
+    </div>
+    <script src='http://code.jquery.com/jquery-2.2.4.min.js'  ></script>
+    <script src="Logic.js"></script>
+    <script src="Questions.js"></script>
+    </body>
+</html>
